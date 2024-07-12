@@ -18,9 +18,10 @@ public class MessagingApiAppApplication {
 		printmessage();
 		System.out.println("new chenge");
 	}
-	@GetMapping ("hey")
-	public void output() {
+	@GetMapping("hey")
+	public String output() {
 		System.out.println("Goodbye!");
+		return "Saturday and Sunday";
 	}
 	
 
