@@ -2,7 +2,10 @@ package com.training.bms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 @SpringBootApplication
 public class MessagingApiAppApplication {
 
@@ -13,6 +16,10 @@ public class MessagingApiAppApplication {
 		SpringApplication.run(MessagingApiAppApplication.class, args);
 		printmessage();
 		System.out.println("new chenge");
+	}
+	@GetMapping ("hey")
+	public void output() {
+		System.out.println("Goodbye!");
 	}
 	
 
